@@ -156,9 +156,11 @@ ostream& ariel::operator<<(ostream &out, const OrgChart &org) {
     for (unsigned int i = 0; i < ans.size(); i++) {
         if (i != 0) {
             out << endl;
+            out << endl;
+
         }
         for (unsigned j = 0; j < ans.at(i).size(); j++) {
-            out << "--" << ans[i][j] << "--";
+            out << "----" << ans[i][j] << "----";
         }
     }
     return out;
